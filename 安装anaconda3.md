@@ -40,3 +40,7 @@
 ## 添加镜像源
 
 	conda config --add channels https://pypi.tuna.tsinghua.edu.cn/simple
+
+## 升级pip
+	
+	pip3 install --upgrade pip
