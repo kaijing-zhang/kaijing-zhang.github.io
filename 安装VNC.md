@@ -86,5 +86,6 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 	systemctl start vncserver@:1
 
 
-
+## 9. 添加vnc用户
+	
 
