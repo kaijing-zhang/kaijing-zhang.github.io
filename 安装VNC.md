@@ -88,4 +88,11 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 
 ## 9. 添加vnc用户
 	
+	adduser user1
+	passwd user1
+	su - user1
+	vncpasswd
+	su -
+	cp /etc/systemd/system/vncserver@\:1.service /etc/systemd/system/vncserver@\:2.service
+	vim /etc/systemd/system/vncserver@\:2.service
 
