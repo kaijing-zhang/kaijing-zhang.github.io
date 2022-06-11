@@ -10,4 +10,4 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 
 	vncpasswd
 
-![密码](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/1.png)
+![密码](./images/1.png)
