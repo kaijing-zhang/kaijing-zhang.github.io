@@ -7,3 +7,7 @@
 ## 二、 安装图形用户界面
 
 [安装图形用户界面](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.md)
+
+## 三、 安装VNC
+
+[安装VNC](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/%E5%AE%89%E8%A3%85VNC.md)
