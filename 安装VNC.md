@@ -125,4 +125,24 @@ user1的vcn配置如下：
 	systemctl enable vncserver@:2
 	ss -tulpn| grep vnc
 
+## 12. 修改user1配置文件，使开启VNC就进入桌面
+
+	su - user1
+	vim ~/.vnc/xstartup
+	
+从`/etc/X11/xinit/xinitrc`修改为`startxfce4`  
+	
+	#!/bin/sh
+
+	unset SESSION_MANAGER
+	unset DBUS_SESSION_BUS_ADDRESS
+	startxfce4
+	vncserver -kill $DISPLAY
+
+## 13. 重启VNC服务
+	systemctl stop vncserver@1
+	systemctl start vncserver@:1
+
+
+
 
