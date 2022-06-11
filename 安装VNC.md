@@ -65,5 +65,26 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 	firewall-cmd --add-port=5901/tcp
 	firewall-cmd --add-port=5901/tcp --permanent
 
+## 7.  修改配置文件，使开启VNC就进入桌面
+
+修改配置文件`~/.vnc/xstartup`
+
+	 vim ~/.vnc/xstartup
+
+因为我用的是xfce桌面，所以要从`/etc/X11/xinit/xinitrc`修改为`startxfce4`  
+
+	#!/bin/sh
+
+	unset SESSION_MANAGER
+	unset DBUS_SESSION_BUS_ADDRESS
+	startxfce4
+	vncserver -kill $DISPLAY
+	
+## 8. 重启一下VNC服务
+
+	systemctl stop vncserver@:1
+	systemctl start vncserver@:1
+
+
 
 
