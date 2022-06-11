@@ -56,5 +56,12 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 
 	ss -tulpn| grep vnc
 
+## 6. 防火墙设置
+
+由于我们的 VNC 服务正在 TCP 端口 5901 上侦听，所以防火墙必须放行。不建议直接简单粗暴的关闭防火墙。  
+
+	firewall-cmd --add-port=5901/tcp
+	firewall-cmd --add-port=5901/tcp --permanent
+
 
 
