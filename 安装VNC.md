@@ -116,3 +116,6 @@ user1的vcn配置如下：
 
 	[Install]
 	WantedBy=multi-user.target
+## 10. 重新加载VNC守护程序
+	systemctl daemon-reload
+	systemctl start vncserver@:2
