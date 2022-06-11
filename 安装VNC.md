@@ -119,3 +119,10 @@ user1的vcn配置如下：
 ## 10. 重新加载VNC守护程序
 	systemctl daemon-reload
 	systemctl start vncserver@:2
+	systemctl status vncserver@:2
+
+## 11. 设置开机启动
+	systemctl enable vncserver@:2
+	ss -tulpn| grep vnc
+
+
