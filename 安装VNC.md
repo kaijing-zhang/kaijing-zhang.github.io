@@ -60,6 +60,8 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 
 由于我们的 VNC 服务正在 TCP 端口 5901 上侦听，所以防火墙必须放行。不建议直接简单粗暴的关闭防火墙。  
 
+	systemctl start firewalld.service     # 启动防火墙
+	systemctl enable firewalld.service    # 防火墙开机自动启动
 	firewall-cmd --add-port=5901/tcp
 	firewall-cmd --add-port=5901/tcp --permanent
 
