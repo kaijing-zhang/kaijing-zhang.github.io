@@ -125,7 +125,12 @@ user1的vcn配置如下：
 	systemctl enable vncserver@:2
 	ss -tulpn| grep vnc
 
-## 12. 修改user1配置文件，使开启VNC就进入桌面
+## 12. 防火墙设置
+
+	firewall-cmd --add-port=5902/tcp
+	firewall-cmd --add-port=5902/tcp --permanent
+
+## 13. 修改user1配置文件，使开启VNC就进入桌面
 
 	su - user1
 	vim ~/.vnc/xstartup
@@ -139,7 +144,7 @@ user1的vcn配置如下：
 	startxfce4
 	vncserver -kill $DISPLAY
 
-## 13. 重启VNC服务
+## 14. 重启VNC服务
 	systemctl stop vncserver@:1
 	systemctl start vncserver@:1
 
