@@ -18,3 +18,6 @@
 ## 五、 安装anaconda3
 
 [安装anaconda3](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/%E5%AE%89%E8%A3%85anaconda3.md)
+
+## 六、 安装nginx
+[安装nginx](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/%E5%AE%89%E8%A3%85nginx.md)
