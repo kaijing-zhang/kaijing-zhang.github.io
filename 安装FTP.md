@@ -74,4 +74,4 @@
 
 ## 10. 设置安全组
 
-[FTP安全组](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/img/ftp%20%E5%AE%89%E5%85%A8%E7%BB%84.png)
+![FTP安全组](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/img/ftp%20%E5%AE%89%E5%85%A8%E7%BB%84.png)
