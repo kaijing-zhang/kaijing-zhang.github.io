@@ -11,3 +11,6 @@
 ## 三、 安装VNC
 
 [安装VNC](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/%E5%AE%89%E8%A3%85VNC.md)
+
+## 四、 安装FTP
+[安装FTP](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/%E5%AE%89%E8%A3%85FTP.md)
