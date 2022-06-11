@@ -22,6 +22,8 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 
 	vim /etc/systemd/system/vncserver@:1.service
 
+![root vnc 配置](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/img/root%20vnc%20%E9%85%8D%E7%BD%AE.png)  
+
 配置如下：  
 	
 	[Unit]
