@@ -96,6 +96,8 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 	cp /etc/systemd/system/vncserver@\:1.service /etc/systemd/system/vncserver@\:2.service
 	vim /etc/systemd/system/vncserver@\:2.service
 
+![user1 的VNC 配置](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/img/user1%20vnc%20%E9%85%8D%E7%BD%AE.png)  
+
 user1的vcn配置如下：  
 
 	
