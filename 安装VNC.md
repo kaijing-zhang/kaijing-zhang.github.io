@@ -96,3 +96,21 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 	cp /etc/systemd/system/vncserver@\:1.service /etc/systemd/system/vncserver@\:2.service
 	vim /etc/systemd/system/vncserver@\:2.service
 
+user1的vcn配置如下：  
+
+	
+	[Unit]
+	Description=Remote desktop service (VNC)
+	After=syslog.target network.target
+
+	[Service]
+	Type=simple
+
+	# Clean any existing files in /tmp/.X11-unix environment
+	ExecStartPre=/bin/sh -c '/usr/bin/vncserver -kill %i > /dev/null 2>&1 || :'
+	ExecStart=/usr/bin/vncserver_wrapper user1 %i
+	PIDFile=/home/user1/.vnc/%H%i.pid
+	ExecStop=/bin/sh -c '/usr/bin/vncserver -kill %i > /dev/null 2>&1 || :'
+
+	[Install]
+	WantedBy=multi-user.target
