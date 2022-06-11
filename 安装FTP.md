@@ -67,3 +67,11 @@
 	pasv_min_port=<port number>
 	#设置被动模式下，建立数据传输可使用的端口范围的最大值。
 	pasv_max_port=<port number>
+
+## 9. 重启vsftpd服务
+
+	systemctl restart vsftpd.service
+
+## 10. 设置安全组
+
+	
