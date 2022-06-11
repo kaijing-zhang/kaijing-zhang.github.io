@@ -31,4 +31,12 @@
 
 	[/root/anaconda3] >>> /opt/anaconda3
 
-出现询问是否在用户的`.bashrc`文件中初始化Anaconda3的相关内容。
+出现询问是否在用户的`.bashrc`文件中初始化Anaconda3的相关内容。输入`yes`
+
+	Do you wish the installer to initialize Anaconda3
+	by running conda init? [yes|no]
+	[no] >>> 
+	
+## 添加镜像源
+
+	conda config --add channels https://pypi.tuna.tsinghua.edu.cn/simple
