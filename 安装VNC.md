@@ -140,7 +140,7 @@ user1的vcn配置如下：
 	vncserver -kill $DISPLAY
 
 ## 13. 重启VNC服务
-	systemctl stop vncserver@1
+	systemctl stop vncserver@:1
 	systemctl start vncserver@:1
 
 
