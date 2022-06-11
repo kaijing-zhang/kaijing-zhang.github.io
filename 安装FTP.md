@@ -75,3 +75,31 @@
 ## 10. 设置安全组
 
 ![FTP安全组](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/img/ftp%20%E5%AE%89%E5%85%A8%E7%BB%84.png)
+
+## 11. 打开防火墙端口
+
+	firewall-cmd --add-port=21/tcp
+	firewall-cmd --add-port=21/tcp --permanent
+	firewall-cmd --add-port=50000/tcp
+	firewall-cmd --add-port=50000/tcp --permanent
+	firewall-cmd --add-port=50001/tcp
+	firewall-cmd --add-port=50001/tcp --permanent
+	firewall-cmd --add-port=50002/tcp
+	firewall-cmd --add-port=50002/tcp --permanent
+	firewall-cmd --add-port=50003/tcp
+	firewall-cmd --add-port=50003/tcp --permanent
+	firewall-cmd --add-port=50004/tcp
+	firewall-cmd --add-port=50004/tcp --permanent
+	firewall-cmd --add-port=50005/tcp
+	firewall-cmd --add-port=50005/tcp --permanent
+	firewall-cmd --add-port=50006/tcp
+	firewall-cmd --add-port=50006/tcp --permanent
+	firewall-cmd --add-port=50007/tcp
+	firewall-cmd --add-port=50007/tcp --permanent
+	firewall-cmd --add-port=50008/tcp
+	firewall-cmd --add-port=50008/tcp --permanent
+	firewall-cmd --add-port=50009/tcp
+	firewall-cmd --add-port=50009/tcp --permanent
+	firewall-cmd --add-port=50010/tcp
+	firewall-cmd --add-port=50010/tcp --permanent
+
