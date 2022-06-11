@@ -42,3 +42,19 @@ VNC（Virtual Network Computing），为一种使用RFB协议的屏幕画面分�
 	[Install]
 	WantedBy=multi-user.target
 
+## 4. 重新加载VNC守护程序
+
+	systemctl daemon-reload
+	systemctl start vncserver@:1
+	systemctl status vncserver@:1
+	
+## 5. 设置开机启动
+
+	systemctl enable vncserver@:1
+
+在尝试连接到服务器之前，您可以执行的另一个测试是使用ss命令查看活动网络套接字：如果一切工作正常，您应该会看到 VNC 服务器工作正常并使用 TCP 端口 5901。执行命令：  
+
+	ss -tulpn| grep vnc
+
+
+
