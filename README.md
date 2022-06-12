@@ -21,3 +21,6 @@
 
 ## 六、 安装nginx
 [安装nginx](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/%E5%AE%89%E8%A3%85nginx.md)
+
+## 七、 安装mysql
+[安装mysql](https://github.com/kaijing-zhang/kaijing-zhang.github.io/blob/main/%E5%AE%89%E8%A3%85mysql.md)
