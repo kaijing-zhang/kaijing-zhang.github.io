@@ -79,6 +79,15 @@ localhost后面的最后的那一大串字符，就是密码，复制下来。
 
 	flush privileges;
 
+## 开通远程连接权限
 
+	use mysql;
+
+	show tables;
+	select * from user \G
+
+	select host, user from user \G
+	update user set host="%" where Host='localhost' and user = "root";
+	flush privileges;
 
 
