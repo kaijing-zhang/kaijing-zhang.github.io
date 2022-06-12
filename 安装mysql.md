@@ -90,4 +90,7 @@ localhost后面的最后的那一大串字符，就是密码，复制下来。
 	update user set host="%" where Host='localhost' and user = "root";
 	flush privileges;
 
-
+## 开通防火墙（mysql默认3306）
+	
+	firewall-cmd --add-port=3306/tcp
+	firewall-cmd --add-port=3306/tcp --permanent
